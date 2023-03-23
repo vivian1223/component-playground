@@ -1,0 +1,47 @@
+.label {
+	display: flex;
+	align-items: center;
+}
+
+.label > span {
+	padding-left: 8px;
+	cursor: pointer;
+}
+
+span.disabled {
+	color: #e5e5e5;
+	cursor: not-allowed;
+}
+
+.checkbox {
+	position: relative;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+
+.checkbox > input {
+	visibility: hidden;
+}
+
+.checkbox > svg {
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+
+.checkbox > svg > path {
+	fill: #e9c46a;
+}
+
+.disabled > svg > path {
+	fill: #e5e5e5;
+	cursor: not-allowed;
+}
+
+.showIcon > svg {
+	opacity: 0;
+}
