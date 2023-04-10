@@ -1,6 +1,5 @@
 .app {
 	padding: 15px;
 	width: 100%;
-	background-color: #023047;
-	color: #fff;
+	color: var(--primary);
 }

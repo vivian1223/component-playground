@@ -1,3 +1,7 @@
 .card {
 	padding: 30px;
 }
+
+.card > h2 {
+	margin-bottom: 15px;
+}
