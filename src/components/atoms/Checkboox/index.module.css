@@ -42,6 +42,6 @@ span.disabled {
 	cursor: not-allowed;
 }
 
-.showIcon > svg {
+.show-icon > svg {
 	opacity: 0;
 }
