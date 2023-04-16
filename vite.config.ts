@@ -10,4 +10,9 @@ export default defineConfig({
     cssMinify: true,
     cssTarget: 'es2015',
   },
+	css: {
+  modules: {
+    localsConvention: 'camelCase',
+  },
+},
 });
