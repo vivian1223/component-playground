@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
 :root {
   --primary: #264653;
+	--white: #fff;
 }

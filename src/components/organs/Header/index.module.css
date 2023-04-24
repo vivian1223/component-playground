@@ -1,5 +1,8 @@
 .header {
 	padding: 250px;
+	background-size: cover;
+	height: 100vh;
+	color: var(--white);
 
 	& > p {
 		line-height: 1.5;
