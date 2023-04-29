@@ -53,5 +53,13 @@ table {
 
 :root {
   --primary: #264653;
+	--primary-light: #366172;
+	--primary-dark: #18333e;
+	--secondary: #ffca46;
+	--secondary-dark: #ffb703;
+	--secondary-light: #ffe957;
+	--info: #f5f5f5;
+	--info-dark: #aeaeae;
 	--white: #fff;
+	--dark: #282525;
 }

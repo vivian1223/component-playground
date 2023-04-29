@@ -1,0 +1,77 @@
+@import './../../../index.css';
+
+.style-guide {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+
+	& > h2 {
+		color: var(--info-dark);
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	& > .color {
+		display: flex;
+		margin-bottom: 0.5rem;
+
+		& > div {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 0.5rem;
+			margin-right: 0.5rem;
+		}
+	}
+
+	& > .primary {
+		& > div:first-child {
+			background-color: var(--primary-dark);
+		}
+
+		& > div:nth-child(2){
+			background-color: var(--primary);
+		}
+
+		& > div:nth-child(3){
+			background-color: var(--primary-light);
+		}
+	}
+
+	& > .secondary {
+		& > div:first-child {
+			background-color: var(--secondary-dark);
+		}
+
+		& > div:nth-child(2){
+			background-color: var(--secondary);
+		}
+
+		& > div:nth-child(3){
+			background-color: var(--secondary-light);
+		}
+	}
+
+	& > .common {
+		& > div:first-child {
+			background-color: var(--dark);
+		}
+
+		& > div:nth-child(2){
+			background-color: var(--info-dark);
+		}
+
+		& > div:nth-child(3){
+			background-color: var(--info);
+		}
+
+		& > div:nth-child(4){
+			background-color: var(--white);
+		}
+	}
+}
