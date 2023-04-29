@@ -17,7 +17,9 @@
 	"ignoreFiles": [
 		"node_modules",
 		"dist/**",
+		"**/*.ts",
 		"**/*.js",
+		"**/*.mdx",
 		"**/*.json",
 		"**/*.jpg",
 		"**/*.png",
