@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 
-import { ReactComponent as CheckboxIcon } from '../../../images/icons/checkbox.svg';
+import { ReactComponent as CheckboxIcon } from './../../images/icons/checkbox.svg';
 
 import styles from './index.module.css';
 
