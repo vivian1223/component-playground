@@ -5,7 +5,9 @@ import svgr from 'vite-plugin-svgr';
 // https://vitejs.dev/config/
 export default defineConfig({
 	base: '/component-playground/',
+	// the following setting is for developing storybook
   plugins: [react(), svgr({ svgrOptions: { plugins: ['@svgr/plugin-svgo'] } })],
+	// plugins: [react(), svgr()],
 	build: {
     cssMinify: true,
     cssTarget: 'es2015',

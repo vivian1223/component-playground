@@ -1,0 +1,246 @@
+@import './../../../index.css';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	border: 0;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+.small {
+	font-size: 12px;
+	padding: 8px;
+}
+
+.medium {
+	font-size: 14px;
+	padding: 11px 20px;
+}
+
+.large {
+	font-size: 16px;
+	padding: 12px 24px;
+}
+
+.filled {
+	width: 100%;
+}
+
+.primary {
+	&.contained {
+		background-color: var(--primary);
+		color: var(--white);
+
+		&:hover , &:active {
+			background-color: var(--primary-dark);
+		}
+	}
+
+	&.outlined {
+		background-color: var(--white);
+		color: var(--primary);
+		border: 1px solid var(--primary);
+
+		&:hover , &:active {
+			background-color: var(--primary);
+			color: var(--white);
+
+			& > .start-icon >svg > path {
+				fill: var(--white);
+			}
+
+			& > .end-icon >svg > path {
+				fill: var(--white);
+			}
+		}
+	}
+
+	&:disabled {
+		background-color: var(--info-dark);
+		color: var(--white);
+		cursor: not-allowed;
+
+		&:hover, &:active {
+			background-color: var(--info-dark);
+			color: var(--white);
+		}
+	}
+}
+
+.secondary {
+	&.contained {
+		background-color: var(--secondary);
+		color: var(--white);
+
+		&:hover , &:active {
+			background-color: var(--secondary-dark);
+		}
+	}
+
+	&.outlined {
+		background-color: var(--white);
+		color: var(--secondary);
+		border: 1px solid var(--secondary);
+
+		&:hover , &:active {
+			background-color: var(--secondary);
+			color: var(--white);
+
+			& > .start-icon >svg > path {
+				fill: var(--white);
+			}
+
+			& > .end-icon >svg > path {
+				fill: var(--white);
+			}
+		}
+	}
+
+	&:disabled {
+		background-color: var(--info-dark);
+		color: var(--white);
+		cursor: not-allowed;
+		border: none;
+
+		&:hover, &:active {
+			background-color: var(--info-dark);
+			color: var(--white);
+		}
+	}
+}
+
+.white {
+	&.contained {
+		background-color: var(--white);
+		color: transparent;
+
+		&:hover , &:active {
+			background-color: var(--white);
+		}
+	}
+
+	&.outlined {
+		background-color: transparent;
+		color: var(--white);
+		border: 1px solid var(--white);
+
+		&:hover , &:active {
+			background-color: var(--white);
+			color: var(--dark);
+
+			& > .start-icon >svg > path {
+				fill: var(--dark);
+			}
+
+			& > .end-icon >svg > path {
+				fill: var(--dark);
+			}
+		}
+	}
+
+	&:disabled {
+		background-color: var(--info-dark);
+		color: var(--white);
+		cursor: not-allowed;
+		border: none;
+
+		&:hover, &:active {
+			background-color: var(--info-dark);
+			color: var(--white);
+		}
+	}
+}
+
+.start-icon {
+	display: inline-block;
+	margin-right: 8px;
+
+	&.primary-icon {
+		& > svg > path {
+			fill: var(--white);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--primary);
+			}
+		}
+	}
+
+	&.secondary-icon {
+		& > svg > path {
+			fill: var(--white);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--secondary);
+			}
+		}
+	}
+
+	&.white-icon {
+		& > svg > path {
+			fill: var(--dark);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--white);
+			}
+		}
+	}
+}
+
+.end-icon {
+	display: inline-block;
+	margin-left: 8px;
+
+	&.primary-icon {
+		& > svg > path {
+			fill: var(--white);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--primary);
+			}
+		}
+	}
+
+	&.secondary-icon {
+		& > svg > path {
+			fill: var(--white);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--secondary);
+			}
+		}
+	}
+
+	&.white-icon {
+		& > svg > path {
+			fill: var(--dark);
+		}
+
+		&.outlined-icon {
+			& > svg > path {
+				fill: var(--white);
+			}
+		}
+	}
+}
+
+.text {
+	display: inline-block;
+}
+
+.only-icon {
+	margin: 0;
+}
