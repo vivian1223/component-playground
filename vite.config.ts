@@ -6,6 +6,7 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
 	base: '/component-playground/',
   plugins: [react(), svgr({ svgrOptions: { plugins: ['@svgr/plugin-svgo'] } })],
+	// plugins: [react(), svgr()],
 	build: {
     cssMinify: true,
     cssTarget: 'es2015',
